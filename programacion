@@ -1,0 +1,28 @@
+public class Persona {
+  String nombre;
+  String apellido;
+  String dpi;
+  int nacimiento;
+
+   
+  public Persona(String nombre, String apellido, String dpi, int nacimiento) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.dpi = dpi;
+    this.nacimiento = nacimiento;
+  }
+
+  public void imprimir(){
+    System.out.println("Mi nombre es" + this.nombre+ " " + this.apellido + " mi dpi es "+ this.dpi+" naci en el año " + this.nacimiento);
+  }
+
+
+  public static void main(String[] args) {
+     
+    Persona persona1 = new Persona("Carlos", "Caballeros", "25365 455545 5544", 1989);
+    
+    Persona person2 = new Persona("Tomas", "de Aquino", "25365 455545 5577", 1980);
+    persona1.imprimir();
+    person2.imprimir();
+  }
+}
