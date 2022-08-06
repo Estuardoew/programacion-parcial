@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author Efrain Soza
+ */
+  public class Persona {
+  String nombre;
+  String apellido;
+  String dpi;
+  int nacimiento;
+
+   
+  public Persona(String nombre, String apellido, String dpi, int nacimiento) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.dpi = dpi;
+    this.nacimiento = nacimiento;
+  }
+
+  public void imprimir(){
+    System.out.println("Mi nombre es" + this.nombre+ " " + this.apellido + " mi dpi es "+ this.dpi+" naci en el año " + this.nacimiento);
+  }
+
+
+  public static void main(String[] args) {
+     
+    Persona persona1 = new Persona("Antonio", "Aguirre", "25365 909033 5544", 2001);
+    
+    Persona person2 = new Persona("Efrain", "Souza", "63633 777788 8888", 2000);
+    persona1.imprimir();
+    person2.imprimir();
+  }
+}
